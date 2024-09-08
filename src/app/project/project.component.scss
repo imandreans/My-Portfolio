@@ -1,0 +1,68 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+  height: 560px;
+  overflow-y: scroll;
+  border-radius: 15px;
+  padding-right: 20px;
+  #title {
+    padding-top: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: #1e201e;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding: 8px;
+    gap: 10px;
+    // border: 1px solid white;
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      #name {
+        text-decoration: none;
+        font-size: 1.2em;
+        color: white;
+        // display: inline;
+      }
+      #name:hover {
+        color: #6e88e5;
+        transition: all 0.5s ease-in-out; /* Hover off */
+      }
+      #type {
+        cursor: default;
+        border: 1px solid white;
+        width: max-content;
+        height: max-content;
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 10px;
+      }
+    }
+
+    #github {
+      display: block;
+      width: fit-content;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    #github:hover {
+      color: #6e88e5;
+      transition: 0.5s;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .project-container {
+    #title {
+      text-align: start;
+    }
+    overflow-y: unset;
+  }
+}

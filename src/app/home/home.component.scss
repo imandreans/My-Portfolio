@@ -1,0 +1,38 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 560px;
+  cursor: default;
+  padding-left: 40px;
+  #name {
+    width: fit-content;
+    font-weight: 400;
+    font-size: 3rem;
+  }
+  #desc {
+    font-weight: 100;
+  }
+  #contact {
+    display: flex;
+    gap: 50px;
+    a {
+      color: white;
+      border-color: white;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .home-container {
+    padding: 0;
+    height: fit-content;
+
+    #name {
+      font-size: 2rem;
+    }
+    #desc {
+      font-size: 1rem;
+    }
+  }
+}

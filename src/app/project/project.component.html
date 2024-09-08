@@ -1,0 +1,25 @@
+<article class="project-container">
+  <h1 id="title">My Project</h1>
+  <div class="project-card" *ngFor="let project of projects">
+    <div class="project">
+      <header>
+        <a
+          href="{{ project.linkProject }}"
+          id="name"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ project.name }}</a
+        >
+        <div id="type">{{ project.type }}</div>
+      </header>
+
+      <a
+        href="{{ project.sourceCode }}"
+        id="github"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Github</a
+      >
+    </div>
+  </div>
+</article>
